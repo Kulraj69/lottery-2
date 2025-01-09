@@ -1,10 +1,11 @@
-pragma solidity ^0.4.17;
+
+pragma solidity ^0.4.26;
 
 contract Lottery {
     address public manager;
     address[] public players;
     
-    function Lottery() public {
+    function lottery() public {
         manager = msg.sender;
     }
     
@@ -28,7 +29,7 @@ contract Lottery {
         _;
     }
     
-    function getPlayers() public view returns (address[]) {
+    function getPlayers() public view returns (address[] memory) {
         return players;
     }
 }   

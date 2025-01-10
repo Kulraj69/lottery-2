@@ -3,9 +3,9 @@ const { Web3 } = require('web3');
 const { interface, bytecode } = require('./compile');
 
 const provider = new HDWalletProvider(
-  'unhappy region  unknown culture',
-  // remember to change this  to your own phrase!
-  'https://sepolia.infura.io/v3/'
+  'unhappy region ...',
+  // remember to change this to your own phrase!
+  'https://sepolia.inf...'
   // remember to change this to your own endpoint!
 );
 const web3 = new Web3(provider);
